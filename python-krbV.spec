@@ -2,14 +2,14 @@
 
 Name: python-krbV
 Version: 1.0.90
-Release: 6%{?dist}
+Release: 8%{?dist}
 Summary: Python extension module for Kerberos 5
 
 Group: Development/Languages
 License: LGPLv2+
 
 URL: http://fedorahosted.org/python-krbV/
-Source: https://fedorahosted.org/python-krbV/raw-attachment/wiki/Releases/python-krbV-%{version}.tar.bz2
+Source: http://fedorahosted.org/python-krbV/attachment/wiki/Releases/python-krbV-%{version}.tar.bz2
 
 BuildRequires: python-devel
 BuildRequires: krb5-devel >= 1.2.2
@@ -43,8 +43,14 @@ export CFLAGS="%{optflags} -Wextra"
 %{python_sitearch}/krbVmodule.so
 
 %changelog
-* Mon Nov 19 2012 John Dennis <jdennis@redhat.com> - 1.0.90-6
-- fix upstream source url
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.0.90-8
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.90-7
+- Mass rebuild 2013-12-27
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.90-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
 * Sat Jul 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.90-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
